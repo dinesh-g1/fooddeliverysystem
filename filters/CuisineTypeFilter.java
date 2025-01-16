@@ -1,16 +1,18 @@
 package filters;
 
+import models.CuisineType;
 import models.FoodItem;
 
 public class CuisineTypeFilter implements FoodItemFilter{
-    private final FoodItem foodItem;
+    private final CuisineType cuisineType;
 
-    public CuisineTypeFilter(FoodItem foodItem) {
-        this.foodItem = foodItem;
+    public CuisineTypeFilter(CuisineType cuisineType) {
+        this.cuisineType = cuisineType;
     }
+
 
     @Override
     public boolean filter(FoodItem foodItem) {
-        return this.foodItem.getCuisineType().equals(foodItem.getCuisineType());
+        return this.cuisineType.equals(foodItem.getCuisineType());
     }
 }

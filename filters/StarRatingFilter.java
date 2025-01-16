@@ -1,16 +1,18 @@
 package filters;
 
 import models.FoodItem;
+import models.StarRating;
 
 public class StarRatingFilter implements FoodItemFilter{
-    private final FoodItem foodItem;
+    private final StarRating starRating;
 
-    public StarRatingFilter(FoodItem foodItem) {
-        this.foodItem = foodItem;
+    public StarRatingFilter(StarRating starRating) {
+        this.starRating = starRating;
     }
+
 
     @Override
     public boolean filter(FoodItem foodItem) {
-        return this.foodItem.getStarRating().getVal() >= foodItem.getStarRating().getVal();
+        return this.starRating.getVal() >= foodItem.getStarRating().getVal();
     }
 }
