@@ -32,4 +32,20 @@ public class FoodItem {
     public String getImageUrl() {
         return imageUrl;
     }
+
+    public double getPrice() {
+        return price;
+    }
+
+    public MealType getMealType() {
+        return mealType;
+    }
+
+    public CuisineType getCuisineType() {
+        return cuisineType;
+    }
+
+    public StarRating getStarRating() {
+        return starRating;
+    }
 }

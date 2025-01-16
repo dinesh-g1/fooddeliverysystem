@@ -1,5 +1,8 @@
 package apis;
 
+import dao.SearchFoodItem;
+import filters.FoodItemFilter;
+import filters.MealTypeFilter;
 import models.CuisineType;
 import models.FoodItem;
 import models.MealType;
